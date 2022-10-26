@@ -9,13 +9,9 @@ RSpec.describe Post, type: :model do
       posts_counter: 0
     )
     @post = Post.create(
-      # comments_counter: 1,
-      # likes_counter: 1,
       author_id: @user.id
     )
     @like = Like.create(
-      # comments_counter: 1,
-      # likes_counter: 1,
       author_id: @user.id,
       post_id: 1
     )

@@ -10,8 +10,6 @@ RSpec.describe Post, type: :model do
     )
     @comment = Comment.create(
       text: 'Coding is fun',
-      # comments_counter: 1,
-      # likes_counter: 1,
       author_id: @user.id,
       post_id: 1
     )

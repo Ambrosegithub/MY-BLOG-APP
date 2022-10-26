@@ -20,19 +20,19 @@ RSpec.describe Post, type: :model do
   it '@post created should be valid' do
     expect(@post).to be_valid
   end
-  it '@post created should be valid' do
+  it '@Title must not be blank' do
     @post.title = 'Programming school at Microverse is awesome'
     expect(@post).to be_valid
   end
-  it '@post created should be valid' do
-    @post.text = 'Coding is fun'
+  it '@title must not exceed 250 characters.' do
+    @post.title = 'Coding is fun'
     expect(@post).to be_valid
   end
   it '@post created should be valid' do
     @post.comments_counter = 0
     expect(@post).to be_valid
   end
-  it '@post created should be valid' do
+  it '@LikesCounter must be an integer greater than or equal zero.' do
     @post.likes_counter = 1
     expect(@post).to be_valid
   end
