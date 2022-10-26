@@ -1,24 +1,50 @@
-# README
+ Project Name
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# MY_BLOG_APP
+> Description of the project.
+This project, MY_BLOG_APP - is an app that allow the users to make post, comment and like the post that was created. this app also control the paramental that user can and cannot use, the user input are been save to the database.
+## Built With
+- Major language
+ Ruby ON RAILS
 
-Things you may want to cover:
+- Technologies used
+rubocop
+Rspec
+Gem
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-* Database creation
+### Prerequisites
+ basic Computer knowledge, HTML, CSS, basic programming, and Ruby
 
-* Database initialization
+## Author
 
-* How to run the test suite
+👤 **Author**
+ **Isigba Ambrose**
+- GitHub: [@ambrosegithub](https://github.com/ambrosegithub)
+- Twitter: [@twitterhandle](https://twitter.com/Glorious851)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ambrose-isigba/)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## 🤝 Contributing
 
-* ...
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Ambrosegithub/MY-BLOG-APP/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](https://github.com/Ambrosegithub/MY-BLOG-APP/blob/dev-branch/LICENSE) licensed.
