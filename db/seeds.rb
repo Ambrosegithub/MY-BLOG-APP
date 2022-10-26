@@ -16,3 +16,18 @@
 #rails g migration AddPostRefToComments post:references:index
 #rails g migration AddPostRefToLikes post:references:index
 #rails db:migrate
+
+first_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
+second_user = User.create(name: 'Titi Ambrose\'s mum', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.')
+
+first_post = Post.create(user: first_user, title: 'Hello Best mum', text: 'This is my first post')
+second_post = Post.create(user: first_user, title: 'Hello progrmmers', text: 'Ruby on Rails is awesome!')
+third_post = Post.create(user: second_user, title: 'Hello Rubyrians', text: 'Ruby on Rails is very fast!')
+fourth_post = Post.create(user: second_user, title: 'Hello micronauts', text: 'Microverse is the best! programing school')
+
+first_comment = Comment.create(user: first_user, post: first_post, text: 'This is my first comment')
+second_comment = Comment.create(user: first_user, post: first_post, text: 'I Love programming')
+third_comment = Comment.create(user: first_user, post: first_post, text: 'its fun to learn')
+fourth_comment = Comment.create(user: first_user, post: first_post, text: 'I have the best mum in the world')
+fifth_comment = Comment.create(user: first_user, post: first_post, text: 'I love my mum')
+sixth_comment = Comment.create(user: first_user, post: first_post, text: 'I love my dad')
