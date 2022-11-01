@@ -1,1 +1,18 @@
-<h1>Here is a list of a post for a given user</h1>
+<h1>Here is a lists of a given post</h1>
+<section>
+      <div class= "container">
+        <div class="details">
+          <h1 class="user-head"><%= @post.title %></h1>
+          <p>post deescription: <span><%= @post.text%></span> </p>
+          <p class="user-para">Number of comments: <%= @post.comments_counter || 0 %></p>
+          <p class="user-para">Number of likes: <%= @post.likes_counter || 0 %></p>
+        </div>
+      </div>
+      <div class="recent-comments">
+      <ul>
+      <% @post.recent_comment.each do |rec| %>
+      <li>comments:<%= rec.text %></li>
+       <% end %>
+      </ul>
+      </div>
+</section>
