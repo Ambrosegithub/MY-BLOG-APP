@@ -9,9 +9,10 @@
         </div>
       </div>
       <div class="recent-comments">
+      
       <ul>
-      <% @post.recent_comment.each do |rec| %>
-      <li>comments:<%= rec.text %></li>
+      <% @comments.each do |rec| %>
+      <li><%= rec.author.name %> : <%= rec.text %></li>
        <% end %>
       </ul>
       </div>
