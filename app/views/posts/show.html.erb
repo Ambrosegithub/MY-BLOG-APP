@@ -1,6 +1,6 @@
 <h1>Here is a lists of a given post</h1>
 <section>
-      <div class= "container">
+  <div class= "container">
         <div class="details">
           <h1 class="user-head"><%= @post.title %></h1>
           <p>post deescription: <span><%= @post.text%></span> </p>
@@ -9,7 +9,6 @@
         </div>
       </div>
       <div class="recent-comments">
-
      <div>
         <%= form_with url: "/users/#{@post.author_id}/posts/#{@post.id}/likes", scope: :like do |f| %>
         <%= f.submit "Like" %>
@@ -23,5 +22,5 @@
       </ul>
 
       <%= render "add_comment" %>
-    </div>
+  </div>
 </section>
