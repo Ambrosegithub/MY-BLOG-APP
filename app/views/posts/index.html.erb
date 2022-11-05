@@ -1,6 +1,5 @@
 
 <h1>Here is a lists of a given user</h1>
-
 <section>
     <div class= "container">
         <div class="user-img">
@@ -22,6 +21,11 @@
           <p class="user-para">Number of likes: <%= post.likes_counter || 0 %></p>
         </div>
       </div>
+    <ul>
+      <% post.recent_comment.each do |rec| %>
+      <li><%= rec.author.name %>:<%= rec.text %></li>
+       <% end %>
+    </ul>
   <% end %>
   <button>pagination</button>
 </section>
