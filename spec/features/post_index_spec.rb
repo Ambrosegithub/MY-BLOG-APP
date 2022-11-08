@@ -35,18 +35,15 @@ RSpec.describe Post, type: :feature do
     end
 
     it 'should see the number of posts each user has written' do
-      # @post1.each do |post|
       expect(page).to have_content(@user.first.posts_counter)
       # end
     end
 
     it "I can see a post's title." do
-      # visit user_post_path(@post)
       expect(page).to have_content('Here is a lists of a given user')
     end
 
     it "I can see some of the post's body." do
-      # visit user_post_path(@posts)
       expect(page).to have_content('Here is a lists of a given user')
     end
 
@@ -55,18 +52,11 @@ RSpec.describe Post, type: :feature do
     end
 
     it 'I can see how many comments a post has.' do
-      # visit user_post_path(@post)
       expect(page).to have_content(@post1.comments_counter)
     end
 
     it 'I can see how many likes a post has.' do
-      # visit user_post_path(@post)
       expect(page).to have_content(@post1.likes_counter)
     end
-
-    # it 'should redirect to post\'s show page when clicking on a post' do
-    #  click_link 'Titi Ambrose'
-    # expect(page).to have_current_path(user_posts_path(@user, @post1.title))
-    # end
   end
 end
