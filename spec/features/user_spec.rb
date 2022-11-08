@@ -52,7 +52,7 @@ RSpec.describe User, type: :feature do
             visit user_path(@user.first)
         end
 
-        it 'should see the user\'s profilr picture' do
+        it 'should see the user\'s profile picture' do
             expect(page).to have_css("img[src*='#{@user.first.photo}']")
         end
 
