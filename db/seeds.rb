@@ -41,4 +41,4 @@ sixth_comment = Comment.create(author_id: 1, post: first_post, text: 'I love my 
 # The model
 #belongs_to :author, class_name: "User"
 
-AJANLEKOKO ARIBIDESI 
+# AJANLEKOKO ARIBIDESI 
